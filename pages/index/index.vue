@@ -7,7 +7,7 @@
 					<image src="../../static/index/header-logo1.png" mode="aspectFit"></image>
 				</view>
 				<view class="ydt-bar">
-					<view class="ydt-bar-item" v-for="(item,index) in bars" :key="index">
+					<view class="ydt-bar-item" v-for="(item,index) in bars" :key="index" @click="GoToDetial(item.name)">
 						<text>{{item.name}}</text>
 					</view>
 				</view>
@@ -19,7 +19,7 @@
 							<text style="font-size: 60rpx;">点击进入</text>
 						</view>
 						<view class="left-img">
-							<text style="font-size: 100rpx; font-weight: bold;color: #F6C686;line-height: 150rpx;">选车服务</text>
+							<text style="font-size: 100rpx; font-weight: bold;color: #F6C686;line-height: 150rpx;" @click="GoToDetial(a)">选车服务</text>
 							<view class="img_jiantou" style="width: ;">
 								<!-- <img src="../../static/index/向右.png" alt=""> -->
 								<image src="../../static/index/向右.png" mode=""></image>
@@ -27,11 +27,10 @@
 						</view>
 						<view class="line2" style="width: 500rpx;height: 10rpx;color: #F6C686;background-color: #F6C686;border-radius: 25rpx;"></view>
 					</view>
-					
 				</view>
 				<view class="foot-right">
 					<button type="warn">
-						<text style="font-size: 80rpx;text-align: center;">进入贷款中心</text></button>
+						<text style="font-size: 80rpx;text-align: center;" @click="GoToDetial(b)">进入贷款中心</text></button>
 				</view>
 			</view>
 		</view>
@@ -174,6 +173,7 @@
 				
 			</view>
 		</view>
+		
 		<!-- 联系我们 -->
 					<view class="ydt_contact">
 							<!-- one -->
@@ -251,7 +251,37 @@
 			this.screenHeight=uni.getSystemInfoSync().windowHeight
 		},
 		methods: {
-
+			async GoToDetial(res){
+				if(res=="首页"){
+					uni.pageScrollTo({
+					selector: '.ydt-index-header',//你要跳转的样式位置
+					duration: 300,//跳转时间段
+					})
+				}
+				else if(res=="关于我们"){
+					uni.pageScrollTo({
+					selector: '.ydt-second-header',//你要跳转的样式位置
+					duration: 300,//跳转时间段
+					})
+				}
+				else if(res=="联系我们"){
+					uni.pageScrollTo({
+					selector: '.ydt-bg-text',//你要跳转的样式位置
+					duration: 500,//跳转时间段
+					})
+				}
+				else if(res=="车源中心"){
+					uni.navigateTo({
+						url:'/pages/find_car/find_car'
+					})
+				}
+				else if(res=="贷款中心"){
+					uni.navigateTo({
+						url:'/pages/chedai/chedai'
+					})
+				}
+				  
+			}
 		}
 	}
 </script>
