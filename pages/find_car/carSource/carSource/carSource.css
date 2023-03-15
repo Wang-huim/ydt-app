@@ -1,0 +1,792 @@
+body {
+	margin: 0rpx auto;
+	background-color: #F7F7F7;
+}
+a {
+	color: #2d2e2f;
+	outline: none;
+	text-decoration: none;
+}
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*去掉li左侧的点*/
+}
+.float-left{
+	float: left;
+}
+.float-right{
+	float: right;
+}
+/* 顶部开始 */
+.header_1 {
+	width: 100%;
+	height: 72rpx;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40rpx;
+	margin-left: 0;
+}
+.caution {
+	width: calc(50%);
+	color: #fff;
+	/* display: flex; */
+	flex-direction: row;
+	position: relative;
+	line-height: 72rpx;
+	/* margin-left: 3rpx; */
+	}
+.caut_one {
+	width: calc(100% - 4rpx);
+	top: 0;
+	left: 0;
+	border-style: solid solid none ;
+	border-color:  #191A24 transparent transparent;
+	border-width: 72rpx 30rpx 0rpx 0;
+	/* position: absolute; */
+}
+.cautLeft {
+	margin-left: 21%;
+	height: 72rpx;	
+}
+.cautLeft image{
+	width: 40rpx;
+	height: 40rpx;
+	float: left;
+	margin-right: 8rpx;
+	margin-top: 16rpx;
+}
+.cautLeft view {
+	height: 72rpx;
+	float: left;
+	font-size: 15rpx;
+
+}
+.caut_two{
+	width: calc(100% - 4rpx);
+	top: 0;
+	border-style: none none solid solid;
+	border-color:  transparent transparent #C84241;
+	border-width: 0rpx 0rpx 72rpx 30rpx ;
+}
+.cautRight{
+	margin-left: 710rpx;
+	height: 72rpx;
+	margin-top: 0;
+	display: flex;
+}
+.cautRight  image{
+	width: 40rpx;
+	height: 40rpx;
+	float: left;
+	margin-right: 8rpx;
+	margin-top: 16rpx;
+/*  line-height: 36rrpx;
+  vertical-align: middle; */
+}
+.cautRight span {
+	height: 72rpx;
+	float: left;
+	font-size: 15rpx;
+	/* text-align: center; */
+	/* line-height: 12.5rpx; */
+	/* margin-top: 12rpx; */
+	/* margin-right: 60rpx; */
+}
+.caution .cautLeft,.cautRight{
+	position: absolute;
+	width: 100%;
+	/* text-align:center; */
+	top: 0;
+}
+/* 顶部结束 */
+
+/* 推荐品牌开始 */
+.recommendCar-box{
+  /* height: 100px; */
+  margin: 55px auto;
+  width: 1200px;
+}
+
+.search{
+  height: 182px;
+  width: 1200px;
+}
+.rec-topic{
+  margin-bottom: 20px;
+
+}
+.search .rec-topic .title{padding-left: 0;}
+.topic-cn{
+  font-size: 30px;
+  font-weight:bold;
+}
+.topic-en{
+  font-size: 16px;
+  color: #C84241;
+}
+.rec-search{
+  line-height: 80px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.rec-search input{
+  height: 40px;
+  width: 300px;
+  color: #666666;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #C84241;
+}
+
+.rec-search .carSearch{
+  height: 40rpx;
+  width: 40rpx;
+  background: url('/static/find-car/搜索@2x.png') ;
+  background-color: #fff;
+  border: 0px;
+  position: absolute;
+  right: 30rpx;
+  top: calc(50% - 10px);
+}
+/* 推荐品牌车标 */
+.car_list{
+  height: 100px;
+  width: 1200px;
+  display: flex;
+}
+/* 查看更多 */
+#carList{
+	width: 1100px;
+	/* margin-top: 10px !important; */
+	/* margin-left: -20px; */
+	display: flex;
+	justify-content: space-between;
+	margin:0 auto;
+	overflow:hidden;
+	margin-right: 22px;
+}
+
+#carList li{
+  width: 100px;
+  
+  margin-right: 22px;
+}
+#carList li text{
+  /* width: 90px;
+  text-align: center; */
+  font-size: 16px;
+  display: block;
+  width: 100px;
+  /* font-size: 16px; */
+  color:#666666;
+  line-height: 22px;
+  padding-top: 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  padding-bottom: 11px
+}
+#carList li image{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  margin-left: 28px;
+  margin-top: 14px;
+}
+
+.car_list button{
+  height: 200rpx;
+  width: 200rpx;
+  text-align: center;
+  color: #666666;
+  border-radius: 24rpx;
+  border: 1rpx solid #C84241;
+  font-size: 22px;
+  line-height: 50rpx;
+  padding-top: 50rpx;
+  background-color: #fff;
+}
+.carMenuBox{
+	position: relative;
+}
+/* 下拉菜单 */
+.show{
+	display: block;
+}
+.carMenuBox:hover .carMenu {
+  display: block;
+}
+.carMenu{
+  width: 1200px;
+  height: 257px;
+  position: absolute;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 3px 20px 1px rgba(0,0,0,0.16);
+  display: none;
+  top: 100px;
+  left: -1100px;
+  z-index: 1;
+}
+.carMenu ul{
+  display: flex;
+  margin-top: 23px;
+  padding-left: 28px;
+  margin-bottom: 12px;
+}
+.carMenu .menu{
+  color: #666666;
+  width: 21px;
+  height: 24px;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 5px;
+}
+.carMenu .menu a{
+  color: #666666;
+  width: 21px;
+  height: 24px;
+  /* display: inline; */
+  line-height: 24px;
+}
+.carMenu .menu:hover{
+  background-color: #C84241;
+  /* color: #FFFFFF; */
+
+}
+.carMenu .menu:hover a{
+  background-color: #C84241;
+  color: #FFFFFF;
+}
+#carMenu #Menu {
+  width: 1145px;
+  height: 172px;
+  border-radius: 4px;
+  margin-left: 28px;
+  display: flex;
+  background-color: #FCF7F7;
+}
+#carMenu #Menu .menuCar{
+  width: 140px;
+  height: 28px;
+  margin-top: 11px;
+  margin-left: 4px;
+}
+
+#Menu .menuCar a{
+  padding: 4px 13px 4px 7px;
+}
+#Menu .menuCar a:hover{
+  background-color: #fff;
+  border: 1px solid #C84241;
+
+}
+#Menu .menuCar a image{
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  vertical-align:middle;
+}
+#Menu .menuCar text{
+  color: #666666;
+  font-size: 14px;
+  /* line-height: 20px; */
+  width: 100px;
+  height: 20px;
+ 
+}
+/* 推荐品牌结束 */
+
+/* 热门车系开始 */
+.carseries-box{
+  margin: 0 auto;
+  width: 1200px;
+  /* height: 800px; */
+}
+.carseries-top .cartop-left ul{
+  padding-left: 0;
+}
+.carseries-top{
+  height: 90px;
+  width: 1200px;
+  margin-bottom: 20px;
+}
+.cartop-right ul li{
+  display:inline-block;
+  margin-left: 30px;
+  font-size: 22px;
+  line-height: 58px;
+}
+.cartop-right li a{
+  color: black;
+}
+.cartop-right a:hover {
+  padding-bottom: 3px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #C84241;
+  color: #C84241;
+}  
+/* 车系 */
+#list1 {
+  width: 1200px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-negative: 1;
+	flex-shrink: 1;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	/* justify-content: center; */
+	align-items: center;
+	/* padding-left: 1%; */
+  /* margin-left: 5px; */
+}
+.filter_car{
+  width: 232px;
+  height: 262px;
+  background: #fff;
+  box-shadow: 0 2px 14px 0 #ededf0;
+  border-radius: 4px;
+  text-align: center;   
+  cursor: pointer;
+  margin:0 4px;
+  margin-bottom: 16px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.filter_car .car_img image{
+  width: 169px;
+  height: 105px;
+  object-fit: contain;
+  overflow: hidden;
+  font-weight: 700;
+  margin-top: 15px;
+  border-radius: 4px 4px 0 0;
+}
+
+.filter_car:hover{
+background: #FFFFFF;
+transform: scale(1.03);
+border-radius: 2px;
+box-shadow: 0 9px 10px 1px rgba(0,0,0,0.14);
+transition: transform .5s, background .5s
+}
+
+.filter_car h3 {
+  font-size: 16px;
+  color: #333333;
+  /* line-height: 21px; */
+  /* padding-top: 16px; */
+  margin-top: 11px;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+.filter_car p{
+  font-size: 20px;
+  color: #E62021;
+  /* line-height: 18px; */
+  /* padding-top: 4px; */
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+.filter_car span {
+  display: block;
+  font-size: 14px;
+  color: #999999;
+  line-height: 20px;
+  font-weight: 400;
+  padding-top: 0px;
+  /* padding-bottom: 24px; */
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.filter_car span image {
+	width: 7px;
+	height: 9px;
+	margin-left: 7px;
+}
+.filter_car button {
+  height: 28px;
+  width: 104px;
+  text-align: center;
+  margin-top: 8px;
+  line-height: 28px;
+  margin-bottom: 12px;
+  color: #FFFFFF;
+  background-color: #CB4444;
+  border-radius: 4px ;
+  border: #CB4444;
+  font-size: 14px;
+}
+.product-tmp #list1{
+  margin-bottom: 45px;
+}
+/* 热门车系结束 */
+
+/* 分页开始 */
+/* 分页 */
+.pagebox{
+  height: 40px;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin:0 0 71px;
+}
+#pageBox{
+  height: 40px;
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+#pageBox span{
+  /* float:right ; */
+  width: 38px;
+  height: 38px;
+  margin-left: 12px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 2xp solid #F0ECEC;
+  font-size: 16px;
+  text-align:center;
+  line-height: 38px;
+}
+#pageBox .sum{
+  height: 38px;
+  margin-left: 12px;
+  color: #333333;
+  /* padding: 0 16px; */
+  /* background-color: #fff; */
+  /* border-radius: 6px; */
+  /* border: 2px solid #F0ECEC; */
+  font-size: 16px;
+  text-align:center;
+  line-height: 38px;
+}
+#pageBox .sum span{
+  margin-left: 0;
+}
+#pageBox #pageNavli{
+  display: flex;
+}
+
+#pageBox #pageNavli li{
+  /* float:right ; */
+  margin-left: 12px;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 2px solid #F0ECEC;
+  line-height: 38px;
+  font-size: 16px;
+  text-align:center;
+}
+#pageBox #pageNavli li:hover{
+  background-color: #CB4444;
+  /* border: #191A24; */
+}
+#pageNavli li:hover a{
+  color: #fff;
+  background-color: #CB4444;
+
+}
+.quantity {
+  /* height: 200px;
+  background-color: #fff;
+  border-radius: 6px;*/
+  margin-left: 16px;  
+  z-index: 100;
+}
+.quantity a{
+  display: flex;
+  padding: 0 16px;
+  /* width: 113px; */
+  margin-right: 0;
+  height: 38px;
+  line-height: 38px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  border: 2px solid #F0ECEC;
+  font-size: 16px;
+  color: #333333;
+  /* margin-top: 2px; */
+}
+.quantity a image{
+  width: 18px;
+  height: 18px;
+  margin-top: 10px;
+  margin-left: 6px;
+}
+.quantity a p{
+  color: #333333;
+}
+.quantity .num{
+  display: none;
+  /* height: 160px; */
+  background-color: #fff;
+  border-radius: 6px;
+  margin-left: 16px;
+  z-index: 10000;
+  float: left;
+}
+.quantity:hover .num{
+	display: block;
+}
+#prev image , #next image{
+	width: 18px;
+	height: 18px;
+	margin-top: 10px;
+	margin-left: 6px;
+}
+.jump{
+  line-height: 38px;
+  margin-left: 12px;
+  display: flex;
+}
+.jump input{
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 16px;
+  color: #333333;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 2px solid #F0ECEC;
+  margin: 0 8px;
+}
+/* 分页结束 */
+/* 底部开始 */
+.footerbox {
+    background: #393939;
+	width: 100%;
+	/* height: 296px; */
+}
+.footerbox .ftop{
+    margin: 0 auto;
+    width: 1200px;
+    height: 170px;
+}
+
+.footerbox .logo{
+    float:left;
+    width: 30%;
+    text-align: center;
+}
+
+.footerbox .logo image {
+    width: 154px;
+    height: 56px;
+}
+
+.footerbox .item {
+	margin: 40px 0 0 40px
+}
+
+.footerbox .item_1 {
+	color: #fff;
+	width: 224px;
+	font-size: 14px;
+	margin: 10px 0 0 85px;
+}
+
+.footerbox .footer{
+    float:left;
+    width: 69%;
+}
+
+.footer {
+    display: flex;
+    padding: 30px 0 34px
+}
+
+.footer .cont {
+    border-left: dashed 1px #979797
+}
+
+.footer .cont:last-child {
+    border-right: none
+}
+
+
+.link {
+    width: 200px;
+    margin: 0 0 0 60px
+}
+
+.link a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #E3E3E3;
+    line-height: 26px
+}
+
+.footer .link .opinion {
+    cursor: pointer;
+}
+
+.footer .link .opinion-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45)
+}
+
+.footer .link .opinion-box .cont {
+    min-width: 467px;
+    background: #FFFFFF;
+    border-radius: 4px
+}
+
+.footer .link .opinion-box .cont .close {
+    padding: 25px 34px 18px;
+    background: #F8F8F8;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer .link .opinion-box .cont .close p {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A1A1A
+}
+
+.footer .link .opinion-box .cont .close image {
+    cursor: pointer;
+    width: 27px;
+    height: 27px
+}
+
+.footer .link .opinion-box .cont .form {
+    padding: 0 32px
+}
+
+.footer .link .opinion-box .cont .form .input-box {
+    padding: 20px 0;
+    border-bottom: dashed 1px #CDCDCD
+}
+
+.footer .link .opinion-box .cont .form .input-box label {
+    font-size: 18px;
+    font-weight: normal;
+    color: #1A1A1A
+}
+
+.footer .link .opinion-box .cont .form .input-box label sup {
+    font-size: 10px;
+    color: #EA0C27
+}
+
+.footer .link .opinion-box .cont .form .input-box input[type="text"] {
+    font-size: 18px;
+    border: none;
+    outline: none
+}
+
+.footer .link .opinion-box .cont .form .input-box #phone {
+    width: 70%
+}
+
+.footer .link .opinion-box .cont .form .input-box textarea {
+    margin: 20px 0 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #DADADA;
+    border: none;
+    outline: none;
+    resize: none
+}
+
+.footer .link .opinion-box .cont .form .submit-box {
+    padding: 24px 0 26px;
+    border-top: dashed 1px #CDCDCD
+}
+
+.footer .link .opinion-box .cont .form .submit-box input {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 13px 0;
+    font-size: 16px;
+    font-weight: normal;
+    color: #FFFFFF;
+    background: rgb(252, 0, 40);
+    border-radius: 4px
+}
+
+.footer .erweima {
+    flex: 0 0 189px;
+    text-align: center
+}
+
+.footer .erweima image {
+    width: 96px;
+    height: 96px;
+	z-index: 1;
+}
+
+.footer .erweima p {
+    margin: 10px 0 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #DEDEDE
+}
+
+.footer .phone {
+    display: flex;
+    padding: 0 0 0 33px;
+    margin: 10px 0 0
+}
+
+.footer .phone image {
+    margin: 0 19px 0 0;
+    width: 32px;
+    height: 32px;
+	z-index: 1;
+}
+
+.footer .phone .number {
+    font-size: 20px;
+    font-weight: normal;
+    color: #E4E4E4
+}
+
+.footer .phone .time {
+    display: inline-block;
+    margin: 8px 0 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #BDBDBD;
+    line-height: 20px
+}
+
+.copyright {
+    background: #393939;
+    color: #E6E6E6;
+    text-align: center;
+    padding: 20px 0
+}
+
+.copyright p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #E6E6E6;
+    line-height: 20px
+}
+
+/* 底部结束 */
