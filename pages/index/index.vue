@@ -19,7 +19,7 @@
 							<text style="font-size: 60rpx;">点击进入</text>
 						</view>
 						<view class="left-img">
-							<text style="font-size: 100rpx; font-weight: bold;color: #F6C686;line-height: 150rpx;" @click="GoToDetial(a)">选车服务</text>
+							<text style="font-size: 100rpx; font-weight: bold;color: #F6C686;line-height: 150rpx;" @click="GoToDetial(ti)">{{ti}}</text>
 							<view class="img_jiantou" style="width: ;">
 								<!-- <img src="../../static/index/向右.png" alt=""> -->
 								<image src="../../static/index/向右.png" mode=""></image>
@@ -29,8 +29,8 @@
 					</view>
 				</view>
 				<view class="foot-right">
-					<button type="warn">
-						<text style="font-size: 80rpx;text-align: center;" @click="GoToDetial(b)">进入贷款中心</text></button>
+					<button type="warn" @click="GoToDetial(tii)">
+						<text style="font-size: 80rpx;text-align: center;" >{{tii}}</text></button>
 				</view>
 			</view>
 		</view>
@@ -91,13 +91,13 @@
 						<img src="../../static/index/核心业务车icon@2x.png" alt="">
 						<text class="tit">进口车服务</text>
 						<text class="tet">汇集上万种车辆供您选择，您想要的这里都有！</text>
-						<button>点击查看</button>
+						<button @click="GoToDetial(ti)">点击查看</button>
 					</view>
 					<view class="ydt-img1" style="background-image: url('../../static/index/核心业务金融背景@2x.png');">
 						<img src="../../static/index/核心业务贷款icon@2x.png" alt="">
 						<text class="tit">金融科技服务</text>
 						<text class="tet">最高可贷款80万，年利率低至0.001%</text>
-						<button>点击查看</button>
+						<button @click="GoToDetial(tii)">点击查看</button>
 					</view>
 				</view>
 				
@@ -244,7 +244,9 @@
 					{name:"贷款计算"},
 					{name:"贷款问答"},
 					{name:"服务协议"}
-				]
+				],
+				ti:"选车服务",
+				tii:"进入贷款中心"
 			}
 		},
 		onLoad() {
@@ -270,12 +272,12 @@
 					duration: 500,//跳转时间段
 					})
 				}
-				else if(res=="车源中心"){
+				else if(res=="车源中心"||res=="选车服务"){
 					uni.navigateTo({
 						url:'/pages/find_car/find_car'
 					})
 				}
-				else if(res=="贷款中心"){
+				else if(res=="贷款中心"||res=="进入贷款中心"){
 					uni.navigateTo({
 						url:'/pages/chedai/chedai'
 					})
