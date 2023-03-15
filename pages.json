@@ -1,4 +1,44 @@
 {
+<<<<<<< HEAD
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/find_car/find_car",
+            "style" : {
+                "navigationBarTitleText" : "易贷通"
+            }
+        },
+		{
+            "path" : "pages/chedai/chedai",
+            "style" : {
+                "navigationBarTitleText" : "易贷通"
+            }
+        }
+    ],
+    "globalStyle" : {
+        // #ifdef H5
+        "navigationStyle" : "custom"
+		//#endif
+    },
+    
+    //默认去掉导航栏
+    // "navigationBarTextStyle": "black",
+    // "navigationBarTitleText": "uni-app",
+    // "navigationBarBackgroundColor": "#F8F8F8",
+    // "backgrzoundColor": "#F8F8F8"
+    "uniIdRouter" : {},
+    "condition" : {
+        //模式配置，仅开发期间生效
+        "current" : 0, //当前激活的模式(list 的索引项)
+        "list" : [
+            {
+                "name" : "", //模式名称
+                "path" : "", //启动页面，必选
+                "query" : "" //启动参数，在页面的onLoad函数里面得到
+            }
+        ]
+    }
+=======
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -29,4 +69,5 @@
 		// "backgroundColor": "#F8F8F8"
 	},
 	"uniIdRouter": {}
+>>>>>>> 9653d639d7d56ff21ea78f550df80534c3652841
 }

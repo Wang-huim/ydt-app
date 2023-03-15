@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /**
  * 这里是uni-app内置的常用样式变量
@@ -267,4 +268,9 @@
   color: #DEDEDE;
   line-height: 40rpx;
 }
+=======
+
+.uni-media-list-body{height: auto;}
+.uni-media-list-text-top{line-height: 1.6em;}
+>>>>>>> 21877276e1b0771b094276951c68eb9831bb751c
 

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "description": "项目配置文件。",
     "packOptions": {
         "ignore": [],
@@ -26,4 +27,33 @@
         "tabIndent": "auto",
         "tabSize": 4
     }
+=======
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true,
+    "bigPackageSizeSupport": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.30.2",
+  "appid": "touristappid",
+  "projectname": "che_dai",
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+>>>>>>> 21877276e1b0771b094276951c68eb9831bb751c
 }
