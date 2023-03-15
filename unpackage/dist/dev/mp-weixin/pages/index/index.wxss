@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.ydt-app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.ydt-index-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 2160rpx;
+}
+.ydt-index-header .ydt-bg {
+  position: absolute;
+  width: 100%;
+  height: 2160rpx;
+  z-index: -1;
+}
+.ydt-index-header .ydt-hearer-head {
+  position: absolute;
+  width: 90%;
+  height: 100rpx;
+  display: flex;
+  margin-top: 50rpx;
+  margin-left: 200rpx;
+  z-index: 1;
+}
+.ydt-index-header .ydt-hearer-head .ydt-logo {
+  width: 50%;
+  z-index: 1;
+}
+.ydt-index-header .ydt-hearer-head .ydt-bar {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ydt-index-header .ydt-hearer-head .ydt-bar .ydt-bar-item {
+  display: flex;
+  justify-content: space-between;
+}
+.ydt-index-header .ydt-hearer-head .ydt-bar .ydt-bar-item text {
+  color: white;
+  font-size: 45rpx;
+}
+.ydt-index-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60rpx;
+}
+.ydt-index-content .ydt-index-content-header view {
+  width: 100%;
+}
+.ydt-four-bgimg {
+  display: flex;
+}
+.ydt-four-bgimg .ydt-bg-img {
+  margin-top: 80rpx;
+  margin-left: 40rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ydt-four-bgimg .ydt-bg-img .ydt-front-img {
+  width: 576rpx;
+  height: 558rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ydt-second-header {
+  display: flex;
+  height: 1354rpx;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60rpx;
+}
+.ydt-second-header .ydt-head-bg {
+  margin-top: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ydt-second-header .ydt-head-bg .ydt-second-head text {
+  color: whitesmoke;
+}
+.ydt-second-header .ydt-second-content .ydt-twobg-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 240rpx;
+}
+.ydt-second-header .ydt-second-content .ydt-twobg-img .ydt-img1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1170rpx;
+  height: 680rpx;
+  margin-right: 60rpx;
+}
+.ydt-third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ydt-third .ydt-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 766rpx;
+}
+.ydt-third .ydt-content-box .ydt-third-content {
+  margin-left: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ydt-third .ydt-content-box .ydt-third-content text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 766rpx;
+}
+.ydt-forth {
+  width: 100%;
+  height: 100%;
+}
+.ydt-forth .ydt-forth-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ydt-forth .ydt-forth-head .ydt-bg-img1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ydt-forth .ydt-forth-head .ydt-bg-img1 text {
+  color: red;
+}
+.ydt-forth .ydt-forth-head .ydt-bg-img1 ._img {
+  width: 3840rpx;
+  height: 772rpx;
+}
+.ydt-forth .ydt-forth-head .ydt-bg2 {
+  margin-top: -600rpx;
+}
+.ydt-forth .ydt-forth-head .ydt-bg2 .ydt-bg-text {
+  display: flex;
+  flex-direction: column;
+  color: #F9F9F9;
+  margin-bottom: 80rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 40rpx;
+}
+.ydt-forth .ydt-forth-head .ydt-bg2 .ydt-img2-bg {
+  width: 2400rpx;
+  height: 1390rpx;
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: row;
+}
+.ydt-forth .ydt-forth-head .ydt-bg2 .ydt-img2-bg .ydt-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 280rpx;
+  margin-bottom: 280rpx;
+  margin-left: 40rpx;
+  margin-right: 100rpx;
+  line-height: 40rpx;
+}
+/* 联系我们 */
+.ydt_contact {
+  width: 100%;
+  height: 400rpx;
+  background-color: #393939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
+}
+.ydt_contact {
+  /* display: flex;         */
+}
+.ydt_contact text {
+  color: #DEDEDE;
+  font-size: 28rpx;
+}
+.contact_p1 text {
+  color: #fff;
+  font-size: 30rpx;
+}
+/* one */
+/* 图片 */
+.contact_one {
+  width: 25%;
+}
+.contact_one, .contact_two, .contact_three {
+  border-right: 2px solid #DEDEDE;
+  border-right-style: dashed;
+}
+.contact_two, .contact_three, .contact_four {
+  width: 15%;
+}
+.contact_logo image {
+  width: 396rpx;
+  height: 138rpx;
+}
+/* three */
+.contact_img image {
+  width: 192rpx;
+  height: 192rpx;
+}
+/* 最底部 */
+.ydt_bottom {
+  height: 150rpx;
+  background-color: #393939;
+  text-align: center;
+}
+/* 文字 */
+.contact_p text {
+  font-size: 24rpx;
+  color: #DEDEDE;
+  line-height: 40rpx;
+}
+
