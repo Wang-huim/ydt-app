@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name" : "che_dai",
     "appid" : "",
+=======
+    "name" : "ydt-app",
+    "appid" : "__UNI__8F0D5EB",
+>>>>>>> 9653d639d7d56ff21ea78f550df80534c3652841
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
