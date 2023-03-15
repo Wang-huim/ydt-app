@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/chedai/chedai",
+    "pages/ti/ti",
+    "pages/info/info",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {},
+  "usingComponents": {}
+}

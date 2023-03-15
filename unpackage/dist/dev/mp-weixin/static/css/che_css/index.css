@@ -1,0 +1,565 @@
+body{
+    margin: 0px;
+    background-color: #F7F7F7;
+  }
+  body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  ul,li{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  ul,li,ol,dl,dd {
+    list-style: none;
+  }
+  
+  
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+/* 顶部 */
+.header_1{
+  width: 100%;
+  margin: 0 auto;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+}
+.caution{
+  width: calc(50%);
+  color: #fff;
+  /* display: flex; */
+  flex-direction: row;
+  position: relative;
+  line-height: 44px;
+  margin-right: 3px;
+}
+/* 左 */
+.caut_one{
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-style: solid solid none ;
+  border-color:  #191A24 transparent transparent;
+  border-width: 44px 15px 0px 0;
+  /* position: absolute; */
+}
+  .cautLeft{
+  /* margin-left: 18%; */
+  text-align: center;
+  height: 44px;
+}
+  .cautLeft img{
+  width: 20px;
+  height: 20px;
+  margin-bottom: -4px;
+}
+.cautLeft span{
+  height: 44px;
+  /* text-align: center; */
+  /* line-height: 12.5px; */
+  margin-top: 12px;
+  font-size: 15px;
+}
+/* 右 */
+.caut_two{
+  /* width: 100%; */
+  top: 0;
+  /* right: 0; */
+  /* line-height: 30px; */
+  border-style: none none solid solid;
+  border-color:  transparent transparent #C84241;
+  border-width: 0px 0px 44px 15px ;
+  /* position: absolute; */
+  /* background-color: red; */
+}
+.cautRight{
+  text-align: center;
+  height: 44px;
+  margin-top: 0;
+}
+.cautRight span{
+  height: 44px;
+  /* text-align: center; */
+  /* line-height: 12.5px; */
+  margin-top: 12px;
+  font-size: 15px;
+}
+.cautRight img{
+  /* width: 20px;
+  height: 20px; */
+  line-height: 44px;
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+.caution article{
+  position: absolute;
+  width: 100%;
+  /* text-align:center; */
+  top: 0;
+}
+/* 顶部 - end*/
+
+/* 头部导航 */
+.nav-right{
+  position: relative;
+  margin-top: -75px;
+  margin-left: 400px;
+}
+.header-box{
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  line-height: 60px;
+  width: 1200px;
+}
+.nav-right li{
+  display: inline;
+  margin-left: 52px;
+}
+.nav-right li a{
+  color: black;
+  text-decoration:none;
+  font-size: 16px;
+  /* font-style:PingFang SC-Regular; */
+}
+.nav-right li a:hover{
+  color:#C84241 ;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+/* 头部导航 - end */
+
+/* banner开始  */
+.carbanner{
+  width: 100%;
+  /* height: 800px; */
+  /* width: 100%; */
+  /* height: 300px; */
+  /* background-color: red; */
+}
+.carbanner img{
+  width: 100%;
+  height: 100%;
+}
+/* banner  end */
+
+/* container开始 */
+.ui-limit{
+height: 100px;
+width: 25%;
+float: left;
+line-height: 25%;
+background: #FFFFFF;
+/*height: 180px;*/
+
+}
+.ui-icons{
+float: left;
+text-align: center;
+width: 49%;
+padding-top: 25px;
+color:#e16552;
+}
+.ui2{
+padding-top: 20px;
+}
+.qt-gl{
+padding-top: 25px;
+line-height: 26px;
+float: right;
+text-align: left;
+width: 50%;
+}
+
+.uidesc-tit{
+font-size: 18px;
+  font-family: PingFang SC-Heavy, PingFang SC;
+color:#C84241;
+  letter-spacing: 5px;
+  font-weight: 800;
+}
+.uidesc-note{
+  font-size: 13px;
+  color: #666666 ;
+  font-family: PingFang SC-Regular, PingFang SC;
+  letter-spacing: 1px;
+}
+.image_i{
+  position: relative;
+  margin-top: -10px;
+  margin-left: 80px;
+}
+.image_i2{
+position: relative;
+margin-top: -4px;
+margin-left: 80px;
+}
+.an-1{
+  animation: fadeInLeft 0.5s 1;
+}
+.an-2{
+  animation: fadeInLeft 1s 1;
+}
+.an-3{
+  animation: fadeInLeft 1.5s 1;
+}
+.an-4{
+  animation: fadeInLeft 2s 1;
+}
+/* container - end */
+
+/* 优选贷款匹配 */
+/* 文字 */
+/* .container{
+width: 1920px;
+height: 4737px;
+background: #F7F7F7;
+border-radius: 0px 0px 0px 0px;
+} */
+.index-title{
+margin:62px 0 48px
+}
+.index-title .big-font .p_1{
+line-height:52px;
+font-size: 30px;
+font-family: PingFang SC-Bold, PingFang SC;
+font-weight: bold;
+color: #333333;
+letter-spacing: 5px;
+text-align: center;
+}
+.p_1 span{
+color: #C84241;
+}
+.p_2{
+font-size: 18px;
+font-family: PingFang SC-Regular, PingFang SC;
+font-weight: 400;
+color: #C84241;
+line-height: 19px;
+letter-spacing: 3px;
+/* margin-top:-30px; */
+text-align: center;
+}
+.index-title .big-font{
+margin-top: 150px;
+/* width: 182px; */
+height: 42px;
+}
+/* 文字 - end */
+
+/* tra */
+.loanIntelligence .intelligence {
+display: block;
+width: 373px;
+height: 345px;
+background: #FFFFFF;
+float: left;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius:10px 10px 10px 10px;
+box-shadow: 0 9px 10px 1px rgba(0,0,0,0.14);
+}
+.loanIntelligence .mlr40 {
+margin-left: 40px;
+margin-right: 40px;}
+.intelligenceImg{
+    background: url(../../img/index_img/房产@2x.png) center center no-repeat;
+}
+.intelligenceImg1{
+    background: url(../../img/index_img/汽车@2x.png) center center no-repeat;
+}
+.intelligenceImg2{
+    background: url(../../img/index_img/保单图@2x.png) center center no-repeat;
+}
+.intelligenceImg3{
+    background: url(../../img/index_img/工资@2x.png) center center no-repeat;
+}
+.intelligenceImg4{
+    background: url(../../img/index_img/公积金@2x.png) center center no-repeat;
+} 
+.intelligenceImg5{
+    background: url(../../img/index_img/公司图@2x.png) center center no-repeat;
+} 
+.loanIntelligence .intelligence .imgHover, .loanIntelligence .intelligence .intelligenceImg, .loanIntelligence .intelligence .intelligenceImg1, .loanIntelligence .intelligence .intelligenceImg2, .loanIntelligence .intelligence .intelligenceImg3, .loanIntelligence .intelligence .intelligenceImg4, .loanIntelligence .intelligence .intelligenceImg5 {
+width: 373px;
+height: 207px;
+border-radius: 10px 10px 0 0;
+}
+.loanIntelligence .intelligence .intelligenceContent {
+width: 100%;
+height: 120px;
+margin-top: 18px;}
+.loanIntelligence .intelligence .intelligenceContent .intelligenceCon {
+margin: 0 15px;
+padding: 10px 0;}
+.loanIntelligence .intelligence .intelligenceContent .intelligenceCon .Red_l {
+  float: left;
+  background-color: #C84241 ;
+  width: 5px;
+  height: 21px;
+  margin-top: 4px;
+  margin-left: 10px;
+  /* color: #333333; */
+  /* font-size: 20px;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold; */
+  }
+.loanIntelligence .intelligence .intelligenceContent .intelligenceCon .conTitle {
+float: left;
+margin-left: 10px;
+color: #333333;
+font-size: 20px;
+font-family: PingFang SC-Bold, PingFang SC;
+font-weight: bold;
+}
+.loanIntelligence .intelligence .intelligenceContent .intelligenceCon ul li {
+width: 50%;
+/* font-size: 16px; */
+float: left;
+margin-top: 5px;
+
+font-size: 14px;
+font-family: PingFang SC-Regular, PingFang SC;
+font-weight: 400;
+color: #999999;
+}
+.loanIntelligence .intelligence .intelligenceContent .intelligenceCon .conButton {
+float: right;
+height: 28px;
+line-height: 28px;
+margin-top: 3px;
+width: 104px;
+font-size: 14px;
+color: #fff;
+background-color: #CB4444;
+text-align: center;
+border-radius: 2px;
+}
+.loanIntelligence .intelligence .intelligenceContent .intelligenceCon ul li span {
+font-size: 16px;
+font-family: PingFang SC-Bold, PingFang SC;
+font-weight: bold;
+color: #C84241;
+}
+.footer .footer-cont {
+margin-top: 20px;
+border-bottom: 1px solid #aaa;
+padding-bottom: 10px;}
+.display-row {
+display: flex;
+flex-direction: row;}
+.display-column {
+display: flex;
+flex-direction: column;}
+.footer .footer-cont ul {
+width: 200px;}
+.display-column li{
+line-height: 24px;
+}
+.code li:first-child{
+margin-bottom: 10px;
+}
+.display-column li a{
+color:#aaa !important;
+}
+.footer .footer-cont ul:first-child li:first-child, footer .footer-cont ul:nth-child(2) li:first-child, footer .footer-cont ul:nth-child(3) li:first-child, footer .footer-cont ul:nth-child(4) li:first-child {
+font-size: 18px;
+margin-bottom: 15px;
+margin-top: 0;}
+.loanIntelligence .intelligence .intelligenceCon-a {
+display: block;
+position: relative;
+top: -355px;
+height: 355px;}
+
+
+.imgHover{
+margin: 0 auto;
+
+}
+
+
+
+
+/* 最优贷款产品 */
+
+
+/* 热门产品推荐 */
+.product-list{
+	margin-bottom: 20px;
+}
+.product-item p{
+font-size: 18px;
+font-family: PingFang SC-Bold, PingFang SC;
+font-weight: bold;
+color: #333333;
+}
+/* .product-list .product-title{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width:100%;
+} */
+
+
+/* .product-list .product-title #title-ul{ */
+    /* display: flex; */
+    /* justify-content: space-around; */
+/* } */
+
+.product-list .product-title #title-ul li{
+  float: left;
+	/* display: inline-block; */
+	cursor: pointer;
+	padding: 10px 0;
+	text-align: center;
+	width: 385px;
+  height: 48px;
+  line-height: 48px;
+    background-color:#FEFAFA;
+    margin-top: 100px;
+    letter-spacing: 2px;
+}
+/* .product-list .product-title #title-ul li:after{ */
+    /* background-color: rgb(255,36,36); */
+    /* background: linear-gradient(180deg, #E25C5B 0%, #C84241 100%); */
+
+/* } */
+/* .product-list .product-title #title-ul li p:after{ */
+  /* background-color: rgb(255,36,36); */
+/* font-size: 18px;
+font-family: PingFang SC-Bold, PingFang SC;
+font-weight: bold;
+color: #FFFFFF;
+} */
+
+
+
+
+
+.product-list .product-title #title-ul li:hover:after{
+  content: ""; 
+  width: 0; height: 0; 
+  position: absolute;
+  display: block; 
+  margin-top: -9px;
+  margin-left: 180px;
+  border-width: 10px;
+   border-style: solid;
+  border-color: transparent transparent #F7F7F7 transparent;
+}
+/* .product-list .product-title #title-ul li:after{
+ border-color: transparent transparent transparent white;
+} */
+
+
+
+.title-ul li{
+  display: none;
+}
+.title-ul li:first-child {
+  display: block;
+}
+
+.current{
+  background: linear-gradient(180deg, #E25C5B 0%, #C84241 100%);
+  font-size: 18px;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+
+/* .dw_1{
+  height: 40px;
+} */
+.w_1 li{
+  float: left;
+	/* display: inline-block; */
+	cursor: pointer;
+	padding: 10px 0;
+	width: 150px;
+  height: 38px;
+  line-height: 58px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* border-bottom: 1px solid #F2E6E6; */
+font-size: 16px;
+font-family: PingFang SC-Regular, PingFang SC;
+font-weight: 400;
+color: #333333;
+}
+/* .w_1 li:active{
+  text-decoration: underline;
+} */
+
+/* .w_1 li:hover{ */
+  /* background-color: rgb(255,36,36); */
+  /* font-size:18px ; */
+  /* text-decoration: underline; */
+
+/* font-weight: bold; */
+/* } */
+
+.w_1 li:hover{
+  /* background-color: rgb(255,36,36); */
+  font-size:18px ;
+color: #C84241 ;
+border-bottom: 3px solid #C84241;
+font-weight: bold;
+
+}
+
+
+.triangle {
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent;
+}
+.triangle_top {
+  border-top-color: red;
+}
+
+/*
+.product-list .product-title #title-ul .product-selected{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    width: 200px;
+    background-color: rgb(253, 115, 21);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.product-list .product-content{
+	padding: 20px;
+	background-image: linear-gradient(90deg, #f8f8f8 50%, #F6ECC4);
+	height: 350px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+} */
+
+/* .product-list .product-top-list{
+    padding: 20px 15px; */
+    /* height: 380px; */
+    /* margin: 30px 5px; */
+    /* background-color: #FFF; */
+    /* border-radius: 20px; */
+/* } */
+
+
+
+
+
+
+
