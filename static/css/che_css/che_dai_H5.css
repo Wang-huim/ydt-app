@@ -1,0 +1,676 @@
+	.ydt_index{
+		width: 100%;
+		height: 100%;
+		/* background-color: #F7F7F7; */
+	}
+/* 顶部 */
+
+	.ydt_header_1 {
+		width: calc(100% - 0rpx);
+		height: 88rpx;
+		/* position: fixed; */
+		top: 0;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		}
+	/* 左-黑 */
+	.ydt_top-left {
+		width: 104%;
+		height: 88rpx;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30rpx;
+		color: #FFFFFF;
+		background-color: #191A24;
+		clip-path: polygon(0% 0%, 95% 0, calc(100%) 100%, 0 100%);
+	}
+	.ydt_header_1 image{
+		width: 40rpx;
+		height: 40rpx;
+		/* margin-bottom: -4px; */
+		
+	}
+	/* 右-红 */
+	.ydt_top-right {
+		width: 104%;
+		height: 88rpx;
+		flex-direction: row-reverse;
+		align-items: center;
+		position: relative;
+		background: #C84241;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30rpx;
+		color: #FFFFFF;
+		background-color: #C84241;
+		clip-path: polygon(0% 0%, 20% 400%, calc(100%) 100%, 100% 0%);
+	}
+/* 头部导航 */
+	.ydt_header-box {
+		width: calc(100% - 5%);
+		height: 120rpx;
+		/* position: fixed; */
+		 display: flex;
+		background-color: #FFFFFF;
+		}
+	/* 左-logo */
+	.logo{
+		width: calc(50%);
+		/* text-align: center; */
+	}
+	.logo image{
+		width:274rpx ;
+		height: 100rpx;
+		margin-left: 10%;
+		/* margin-top: 1%; */
+	}
+	/* 右-文字 */
+	.nav-right{
+		width:  calc(50% );
+		text-align: center;
+		display: flex;
+		/* position: fixed; */
+		float: right;
+		/* margin-top: 10rpx; */
+		justify-content: space-between;
+		align-items: center;
+		/* margin-top: 50rpx; */
+	}	
+	.img_2 text{
+		font-size: 32rpx;
+		color:#333333;
+		}
+/* banner开始 */
+	.ydt_banner{
+		height: 1100rpx;
+	}
+	.ydt_banner image{
+		 width: 104%;
+		 height: 100%;
+	}
+/* container开始 */
+	.ydt_container{
+		height: 220rpx;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	.con_img{
+		text-align: center;
+	}
+	.con_p{
+		padding-left: 30rpx;
+	}
+	.con_list{
+		/* margin: 5rpx auto; */
+		/* width: 25%; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/* text-align: center; */
+	}
+	.con_list image{
+		width:136rpx ;
+		height:136rpx ;
+	}
+	.con_list .title_1{
+		color:#C84241  ;
+		font-size: 36rpx;
+		font-family: PingFang SC-Heavy, PingFang SC;
+		
+	}
+	.con_list .title_2{
+		color:#666666  ;
+		font-size: 28rpx;
+		font-family: PingFang SC-Regular, PingFang SC;
+	}
+/* 优选贷款匹配 */
+/* 标题文字 */
+	.ydt_title{
+		padding-top: 100rpx;
+		text-align: center;
+		/* display: flex; */
+		/* justify-content: center; */
+		align-items: center;
+		margin-bottom: 50rpx;
+	}
+	.title1{
+		color: #C84241;
+		font-size: 60rpx;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+		letter-spacing: 5rpx;
+	}
+	.title2{
+		font-size: 60rpx;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+		color: #333333;
+		letter-spacing: 5rpx;
+	}
+	.title3{
+		font-size: 36rpx;
+		font-family: PingFang SC-Regular, PingFang SC;
+		font-weight: 400;
+		color: #C84241;
+		letter-spacing: 2rpx;
+	}
+	.ydt_index_content_box{
+		background-color: #F7F7F7;
+		/* width: 104%; */
+	}
+	
+	/* 第二部分 */
+	.intelligence_one{
+		/* height: 786rpx; */
+		width: 764rpx;
+		height: 706rpx;
+		/* margin-left: 60rpx; */
+		margin-bottom: 60rpx;
+		
+		
+	}
+	.intelligence_one_2{
+		/* height: 786rpx; */
+		width: 764rpx;
+		height: 706rpx;
+		margin-left: 60rpx;
+		margin-right: 60rpx;
+		margin-bottom: 60rpx;
+		
+		
+	}
+	.intelligence{
+		/* width: 104%; */
+		display: flex;
+		/* grid-template-columns: repeat(3, 2fr);
+		display: grid; */
+		align-items: center;
+		justify-content: center;
+		/* margin-left: 100rpx; */
+	}
+	.intelligence_img{
+		/* display: flex; */
+		/* align-items: center; */
+		justify-content: center;
+		width: 768rpx;
+		height: 706rpx;
+		/* background-image: url('../../static/img/che_img/矩形 346@2x.png'); */
+		background-color: #FFFFFF;
+		margin-right: 0%;
+		border-radius:20rpx 20rpx 20rpx 20rpx;
+		box-shadow: 0 9px 10px 1px rgb(0 0 0 / 24%);
+	}
+	.intelligence_img image{
+		width: 768rpx;
+		height:414rpx ;
+	}
+	.intelligence_title{
+		bottom: 0;
+		padding: 30rpx;
+	}
+	.title_h1{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+	}
+	.title_h1 text{
+		color: #333333;
+		font-size: 40rpx;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+	}
+	.title_h1_1 view{
+		background-color: #C84241;
+		width: 10rpx;
+		height: 42rpx;
+		margin-top: 8rpx;
+		margin-right: 20rpx;
+	}
+	.title_h1_1{
+		display: flex;
+	}
+	.title_h2_1{
+		margin-top: 35rpx;
+		/* margin-right: 20rpx; */
+		/* margin-b: 30rpx; */
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+	}
+	.title_h1_2 button{
+		font-size: 28rpx;
+		color: #fff;
+		background-color: #CB4444;
+		text-align: center;
+		border-radius: 4rpx;
+		height: 54rpx;
+		line-height: 54rpx;
+		width: 208rpx;
+}
+	.title_h2_1 text{
+		font-size: 32rpx;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+		color: #C84241;
+	}
+	.title_h2_1 text text{
+		font-family: PingFang SC-Regular, PingFang SC;
+		font-weight: 400;
+		color: #999999;
+	}
+	.h2_1{
+		/* margin-left: 30rpx; */
+	}
+	
+	
+	
+	/* 最优贷款产品 */
+	.ydt_products_all{
+		margin-top: 50rpx;
+	}
+	/* one */
+	
+	.products_one{
+		
+		/* width: 80%; */
+		/* display: flex; */
+		justify-content: center;
+		align-items: center;
+	}
+	.products_one1{
+		/* width: 80%; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.products_one_1{
+		text-align: center;
+		width: 25.2%;
+		background-color: #FEFAFA;
+		height: 126rpx;
+		line-height: 126rpx;
+		letter-spacing: 2rpx;
+		font-size: 35rpx;
+	}
+	
+	/* 2 */
+	.products_one2{
+		/* width: 80%; */
+		display: flex;
+		justify-content: center;
+	}
+	.p2{
+		width: 75%;
+		height: 120rpx;
+		 display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		
+	}
+	.products_one2_1,.products_one_2_1{
+		text-align: center;
+		display: flex;
+		justify-content:center;
+		align-items: center; 
+		border-bottom: 2rpx solid #F2E6E6;
+		border-radius: 0px 0px 0px 0px;
+		font-size: 32rpx;
+		font-family: PingFang SC-Regular, PingFang SC;
+		font-weight: 400;
+		color: #333333;
+	}
+	.products_one_2{
+		width: 60%;
+		
+	}
+	
+	
+	
+	/* two */
+	.products_two{
+		/* width: 80%; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.products_two_1{
+		width: 75.5%;
+		
+	}
+	
+	.products_two_1 view{
+		display: flex;
+		margin-top: 40rpx;
+		padding: 40rpx;
+		background-color: #FFFFFF;
+		border-radius:20rpx 20rpx 20rpx 20rpx;
+		font-size: 28rpx;
+		color: #999999;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.products_two_1 view image{
+		width: 142rpx;
+		height: 142rpx;
+		border-radius:15rpx 15rpx 15rpx 15rpx;
+	}
+	
+	.two_text{
+		/* display: flex; */
+		padding: 20rpx;
+	}
+	.text_1{
+		font-size: 40rpx;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+		color: #333333;
+	}
+	.p1{
+		display: flex;
+	}
+	.text_2{
+		margin-right: 100rpx;
+	}
+	.text_2 text{
+		font-size: 36rpx;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+		color: #C84241;
+	}
+	.products_button{
+
+	}
+	.products_button button{
+		text-align: center;
+		line-height: 66rpx;
+		width: 206rpx;
+		height: 66rpx;
+		background: #FFFFFF;
+		border-radius: 8rpx 8rpx 8rpx 8rpx;
+		opacity: 1;
+		border: 2rpx solid #C84241;
+		font-size: 30rpx;
+		font-family: PingFang SC-Bold, PingFang SC;
+	}
+	.products_button button:nth-child(1){
+		color: #C84241;
+	}
+	.products_button button:nth-child(2){
+		color: #FFFFFF;
+		background-image: url('../../static/img/che_img/立即申请底图@2x.png');
+	}
+	
+	 /* 合作伙伴 partner */
+		/* 招商银行 */
+	.ydt_bank{
+		margin-top: 50rpx;
+		/* width: 100%; */
+		/* height: 100%; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	.bank{
+		/* width: 75%; */
+		/* 
+		display: flex;
+		justify-content: space-between; */
+		display: grid;
+		grid-template-columns: repeat(5, 2fr);
+	}
+	.bank view{
+		width: 448rpx;
+		height: 220rpx;
+		line-height: 220rpx;
+		background-image: url('../../static/img/che_img/矩形 307@2x.png');
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 20rpx;
+	}
+	.bank image{
+		width: 368rpx;
+		height: 116rpx;
+		/* margin-bottom: 50rpx; */
+	}
+	
+	/* 行业资讯 information */
+		/* 一部分 */
+	.ydt_information_p{
+		display: flex;
+		justify-content: space-around;
+		margin-top: 80rpx;
+		margin-bottom: 40rpx;
+		width: 100%;
+		/* justify-content: space-between; */
+		/* margin-left: 400rpx; */
+	}
+	.information_p1{
+		width: 13%;
+		font-size: 40rpx;
+		color: #191A24;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+		/* margin-right: 650rpx; */
+	}
+	.information_p2{
+		width: 34%;
+		font-size: 40rpx;
+		color: #191A24;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+		/* margin-right:950rpx; */
+	}
+	.information_one{
+		display: flex;
+		justify-content: center;
+	}
+	.ydt_information_one{
+		display: flex;
+		justify-content: space-around;
+		width: 80%;
+		/* width: 40%; */
+		/* height: 20%; */
+	}
+	
+	/* 行业动态 */
+	.ydt_tradetrade{
+		width: 42%;
+		/* width:200rx; */
+		/* float: right; */
+	}
+	/* 图片 */
+	.ydt_tradetrade image{
+		width: 312rpx;
+		height: 196rpx;
+		/* justify-items: center; */
+	}
+	.ydt_tradetrade_one ,.ydt_tradetrade_two,.ydt_tradetrade_three{
+		background-color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 246rpx;
+		padding-left: 22rpx;
+		border-radius:10px 10px 10px 10px;
+		/* justify-content: ; */
+	}
+	.ydt_tradetrade_one ,.ydt_tradetrade_two{
+		margin-bottom: 22rpx;
+	}
+	/* 文字 */
+	.ydt_tradetrade text{
+		padding-left: 22rpx;
+		width: 85%;
+		overflow:hidden;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-line-clamp:2;/*显示的行数*/
+		/* height: 100%; */
+	}
+	.tr_wz_p1{
+		font-size: 38rpx;
+		color: #191A24;
+		font-family: PingFang SC-Bold, PingFang SC;
+		font-weight: bold;
+	}
+	.tr_wz_p2{
+		font-size: 28rpx;
+		color: #666666 ;
+		font-weight: 400;
+		font-family: PingFang SC-Regular, PingFang SC;
+	}
+	
+
+	/* 贷款问答 */
+	.ydt_answers{
+		background-color: #FFFFFF;
+		width: 42%;
+		height: 782rpx;
+		border-radius:20rpx 20rpx 20rpx 20rpx;
+		/* justify-content: center; */
+		/* align-items: center; */
+		padding-left: 52rpx;
+		/* margin-bottom: 22rpx; */
+	}
+	.ydt_answers image{
+		width: 60rpx;
+		height: 60rpx;
+		margin-bottom: 60rpx;
+	}
+	/* .one_it text{
+		font-size: 40rpx;
+	} */
+	.ydt_answers_one{
+		/* width: 100%; */
+		width: 90%;
+		height: 33%;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		/* margin-bottom: 220rpx; */
+		padding-left: 42rpx;
+		/* padding-bottom: 220rpx; */
+		border-bottom: 2px solid #eee;
+		
+		
+	}
+	.ydt_answers_three{
+		width: 90%;
+		height: 33%;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		padding-left: 42rpx;
+	}
+	.answers_one_weizi{
+		width: 90%;
+		overflow:hidden;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		-webkit-line-clamp:3;
+	}
+	
+	
+	/* 介绍人物图片person */
+	.ydt_picture {
+		/* width: 375px; */
+		/* height: 100vh; */
+		/* border: 1px solid #f00; */
+		margin-top: 220rpx;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		justify-content: center;
+		}
+	.img_person {
+		width: 600rpx;
+		height: 600rpx;
+		/* border: 1px silid #000; */
+		/* margin-bottom: 0; */
+	}
+	.img_introduce {
+		width: 600rpx;
+		height: 600rpx;
+		/* border: 1px silid #000; */
+		/* margin-bottom: 0; */
+	}
+	.img_person_1{
+		 /* position: fixed; */
+		 z-index: 1;
+	}
+	.img_person image {
+		width: 800rpx;
+		height: 600rpx;
+		/* border-radius: 50%; */
+		object-fit: cover;
+	}
+	.img_introduce image{
+		width: 800rpx;
+		height: 400rpx;
+	}
+	
+/* 联系我们 */
+	.ydt_contact{
+		width: 104%;
+		height: 400rpx;
+		background-color: #393939;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		/* display: grid; */
+		/* grid-template-columns: repeat(4, 1fr); */
+	}
+	.ydt_contact text{
+		color: #DEDEDE;
+		font-size: 28rpx
+	}
+	.contact_p1 text{
+		color: #fff;
+		font-size: 30rpx;
+	}
+	/* one */
+	/* 图片 */
+	.contact_one{
+		width: 25%;
+	}
+	.contact_one,.contact_two,.contact_three{
+		border-right: 2px solid #DEDEDE;
+		border-right-style: dashed;
+	}
+	.contact_two,.contact_three,.contact_four{
+		width: 15%;
+	}
+	
+	.contact_logo image{
+		width: 396rpx;
+		height: 138rpx;
+	}
+	/* three */
+	.contact_img image{
+		width: 192rpx;
+		height: 192rpx;
+	}
+	
+/* 最底部 */
+	.ydt_bottom{
+		width: 104%;
+		height: 150rpx;
+		background-color: #393939;
+		text-align: center;
+	}
+	/* 文字 */
+	.contact_p text{
+		font-size: 24rpx;
+		color: #DEDEDE;
+		line-height: 40rpx;
+	}
